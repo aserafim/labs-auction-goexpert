@@ -66,6 +66,19 @@ Após 20s, o mesmo comando retornará
 null
 ```
 
+### 2. Listar auctions concluídas
+
+```bash
+curl http://localhost:8080/auction?status=1
+```
+
+**Resultado esperado**
+
+```bash
+[{"id":"11ad686f-e8c8-490c-9fd7-502cdd56cd87","product_name":"Produto Teste","category":"Eletrônicos","description":"Leilão de teste","condition":1,"status":1,"timestamp":"2025-08-15T00:58:25Z"}]
+```
+
+
 ## 📄 Licença
 
 Este projeto é distribuído sob a licença MIT. Consulte o arquivo `LICENSE` para mais detalhes.
